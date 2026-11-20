@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        header{
+            background-color: black;
+            color: white;
+        }
+        h2{
+            margin-top: 12px;
+            padding-left: 23px;
+        }
+        nav{
+           padding:20px 0;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            
+        }
+        
+       
+        .container{
+           border: 3px solid black;
+            width: 95vw;
+            height: 60vh;
+        }  
+        .box{
+             height: 50vh;
+            width: 40vw;
+            margin: 12px;
+            padding: 12px;
+        }
+        .box1{
+            background-color: brown;
+            float: left;
+        }
+        .box2{
+            background-color: burlywood;
+            float: right;
+        }
+        .container2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 3px dotted blueviolet;
+        }
+        .box3{
+            background-color: bisque;
+        }
+        .box4{
+            background-color: aquamarine;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Using float</h2>
+    <div class="container">
+        <div class=" box box1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolor, deleniti similique vitae nihil debitis magnam dolorem nobis minima nisi accusantium minus aperiam quisquam numquam ratione dolorum vel atque modi, tempore facilis! Neque minima quisquam quae suscipit aut placeat dolorem! Aspernatur, molestiae. Doloribus qui nisi repudiandae at repellat ipsa voluptate accusamus. Laudantium tenetur saepe nam.
+        </div>
+        <div class=" box box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eveniet blanditiis iure maiores illo suscipit, autem quos natus soluta error deserunt dolorem impedit quis nam assumenda dignissimos voluptates doloremque provident alias! Sunt ullam repellendus labore, adipisci praesentium provident consectetur earum mollitia delectus odio possimus nisi quis necessitatibus aut quas dolorem iste amet numquam reprehenderit sed incidunt at?
+        </div>
+    </div>
+    
+    <h2>Using Flexbox</h2>
+    <div class="container2">
+        <div class="box box3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolor, deleniti similique vitae nihil debitis magnam dolorem nobis minima nisi accusantium minus aperiam quisquam numquam ratione dolorum vel atque modi, tempore facilis! Neque minima quisquam quae suscipit aut placeat dolorem! Aspernatur, molestiae. Doloribus qui nisi repudiandae at repellat ipsa voluptate accusamus. Laudantium tenetur saepe nam.
+        </div>
+        <div class="box box4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque eveniet blanditiis iure maiores illo suscipit, autem quos natus soluta error deserunt dolorem impedit quis nam assumenda dignissimos voluptates doloremque provident alias! Sunt ullam repellendus labore, adipisci praesentium provident consectetur earum mollitia delectus odio possimus nisi quis necessitatibus aut quas dolorem iste amet numquam reprehenderit sed incidunt at?
+        </div>
+    </div>
+</body>
+</html>
