@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition & Animation Practice</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+      }
+      .progress-bar {
+        background-color: red;
+        height: 3px;
+        width: 0;
+        animation: progress 3s ease-in-out 1;
+      }
+
+      @keyframes progress {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 80%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+
+      ul li {
+        list-style: none;
+        text-align: center;
+        padding: 15px;
+      }
+
+      ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: all 0.4s ease;
+      }
+
+      ul li a:hover {
+        background-color: red;
+        border-radius: 20px;
+        color: yellow;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+      }
+
+      .card {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        transition:
+          transform 0.5s ease,
+          background-color 0.5s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-15px) scale(1.1);
+        background-color: lightblue;
+      }
+
+      .circle {
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 50%;
+        margin: 60px auto;
+
+        animation: move 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(-100px);
+        }
+
+        100% {
+          transform: translateX(100px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="progress-bar"></div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card">Card 1</div>
+
+        <div class="card">Card 2</div>
+
+        <div class="card">Card 3</div>
+      </div>
+
+      <div class="circle"></div>
+    </main>
+  </body>
+</html>
