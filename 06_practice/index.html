@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: white;  
+        }
+        ul{
+            display:grid;
+            grid-template-columns: auto auto auto;
+        }
+        ul li{
+            list-style: none;
+            margin: 0 43px;
+            padding: 22px 0;
+        }
+        .container{
+            margin: 23px;
+        }
+        .container2{
+           
+            display:grid;
+            justify-content: space-between;
+            grid-template-columns: auto auto;
+            border: 2px solid orange;
+            
+            grid-row: 2 / span 3;
+        }
+        .box1{
+            height: 35vh;
+            width: 30vw;
+            border: 2px solid aqua;
+            margin: 12px;
+            border-radius: 23px;
+            padding: 23px;
+            background-color: blanchedalmond;
+        }
+        .box2{
+            height: 35vh;
+            width: 30vw;
+            border: 2px solid blueviolet;
+            margin: 12px;
+            border-radius: 23px;
+            padding: 23px;
+            background-color: brown;
+        }
+        .box3{
+               height: 35vh;
+            width: 30vw;
+            border: 2px solid blueviolet;
+            margin: 12px;
+            border-radius: 23px;
+            padding: 23px;
+            background-color: brown;
+        }
+        @media screen and (max-width : 900px){
+            body{
+                background-color: rgb(255, 221, 177);
+            }
+            .box2{
+                background-color: black;
+                color: white;
+            }
+        }
+        @media  screen and (max-width : 600px) {
+            body{
+                background-color: aquamarine;
+            }
+            .box3{
+                background-color: blueviolet;
+            }
+            .box2{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, dolore ipsam! Harum dolor assumenda illum provident similique. Dolorem explicabo numquam optio iure officia perferendis tempora magnam est dolores facilis distinctio consequuntur, quod, laudantium nam recusandae. Consequatur, commodi. Perspiciatis, est.
+</div>
+<div class="container2">
+    <div class="box1">
+        I am box 1
+    </div>
+    <div class="box2">
+        I am box 2
+    </div>
+    <div class="box3">
+        I am box 3
+    </div>
+</div>
+</body>
+</html>
